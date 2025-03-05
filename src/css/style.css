@@ -66,3 +66,105 @@ main {
     text-decoration: none;
     font-size: 28px;
 }
+
+.opciones {
+    grid-area: opcion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.helados {
+    grid-area: pre;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+.logo {
+    position: absolute;
+    bottom: 235px;
+    left: 70%; 
+    transform: translateX(-50%); 
+    max-width: 40%;
+}
+.helados img {
+    position: absolute;
+    object-fit: contain;
+    max-width: 50%;
+}
+
+.helados img:nth-child(1) {
+    transform: rotate(32.69deg);
+    width: 447px;
+    height: 753px;
+    z-index: 5;
+    left: -141px;
+    top: -373px;
+}
+
+.helados img:nth-child(2) {
+    transform: rotate(57.18deg);
+    width: 447px;
+    height: 832px;
+    z-index: 10;
+    left: -52px;
+    top: -272px;
+}
+
+.helados img:nth-child(3) {
+    transform: rotate(85.74deg);
+    z-index: 5;
+    left: 21px;
+    top: 0px;
+}
+
+.parrafo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-2);
+    margin-right: 67px;
+    position: relative;
+}
+
+.parrafo h1 {
+    font-size: 70px;
+    font-family: "Inter_28pt-Bold";
+    color: var(--color-2);
+}
+
+.parrafo span {
+    font-size: 32px;
+    font-family: "Lalezar-Regular";
+    color: var(--color-2);
+}
+
+.parrafo p {
+    font-size: 24px;
+    font-family: "Inder-Regular";
+    max-width: 608px;
+}
+
+.boton{
+    align-self: flex-end;
+    margin-right: 12vh;
+}
+.btn {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    padding: 19px 34px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 91px;
+    display: inline-block;
+    font-family: "Inder-Regular";
+}
