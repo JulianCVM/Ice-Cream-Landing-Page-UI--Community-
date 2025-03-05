@@ -4,3 +4,65 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: url(../storage/img/Rectangle.png);
+    background-color: var(--color-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 95px 1fr;
+    gap: 2%;
+    padding: 23px 1% 0 1%;
+    grid-template-areas:
+        "logo logo menu menu menu menu menu menu opcion opcion"
+        "pre pre pre pre pre info info info info info";
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: contents;
+}
+
+main {
+    display: contents;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    max-width: 200px;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 33px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
